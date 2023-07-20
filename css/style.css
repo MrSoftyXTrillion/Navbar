@@ -1,0 +1,121 @@
+/* !COMMON CSS STARTS HERE====================================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Roboto&display=swap');
+:root {
+    --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--primaryFont);
+    background-color: rgb(255, 255, 255);
+}
+h1,h2,h3,h4,h5,h6,span,paragraph,ol,ul {
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* !COMMON CSS ENDS HERE======================================================================================== */
+
+/* !NAVBAR SECTION STARTS HERE */
+
+/* NAVBAR STARTS HERE======================================================================================== */
+.myNavbarLg .menus li {
+    position: relative;
+}
+.myNavbarLg .menus li a {
+    font-size: 16px;
+    font-family: var(--primaryFont);
+    line-height: 26px;
+    color: #11161E;
+    padding: 0 20px !important;
+    position: relative;
+}
+.myNavbarLg .menus li a.active {
+    color: #FF6F61;
+}
+.myNavbarLg .menus li:hover > a {
+    color: #FF6F61;
+}
+.myNavbarLg .menus li a span {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+}
+.myNavbarLg .menus li:hover a span {
+    transform: translateY(-50%) rotate(180deg);
+}
+.myNavbarLg .menus li ul {
+    position: absolute;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-top: 6px solid #FF6F61;
+    margin-top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.35s linear;
+    z-index: 1;
+    background: #FFF;
+}
+.myNavbarLg .menus li:hover ul {
+    margin-top: 20px;
+    opacity: 1;
+    visibility: visible;
+
+}
+.myNavbarLg .menus li ul li a {
+    padding: 10px 20px !important;
+    border-bottom: 1px solid #ddd;
+    display: block;
+}
+.myNavbarLg .menus li ul li:last-child a {
+    border-bottom: 0;
+}
+.myNavbarSm .iconsGroup ul li,
+.myNavbarLg .iconsGroup ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.myNavbarSm .iconsGroup ul li a,
+.myNavbarSm .iconsGroup ul li span,
+.myNavbarLg .iconsGroup ul li span {
+    color: #11161E;
+}
+.myNavbarSm .iconsGroup ul li a,
+.myNavbarLg .iconsGroup ul li a {
+    color: #11161E;
+    font-size: 18px;
+    position: relative;
+}
+.myNavbarSm .iconsGroup ul li a span,
+.myNavbarLg .iconsGroup ul li a span {
+    width: 15px;
+    height: 15px;
+    background-color: #FF6F61;
+    color: white;
+    border-radius: 50%;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: -4px;
+    right: -9px;
+}
+.myNavbarSm .iconsGroup ul li a span {
+    left: 10px;
+}
+.myNavbarSm .menu .hamburgerMenu {
+    color: #11161E;
+}
+/* NAVBAR ENDS HERE======================================================================================== */
+/* !NAVBAR SECTION ENDS HERE */
